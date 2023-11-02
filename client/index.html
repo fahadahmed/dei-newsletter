@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Template</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 640px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 16px;
+    }
+
+    h2 {
+      color: #2E2E38;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+    }
+
+    .intro {
+      height: 250px;
+      padding: 24px 32px;
+      background-color: #FFFCE3;
+    }
+    .intro h1 {
+      font-size: 16px;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: #2E2E38;
+    }
+
+    .intro p {
+      font-size: 14px;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 300;
+      line-height: 21px;
+      letter-spacing: -0.01em;
+      color: #2E2E38;
+    }
+
+    .intro-title {
+      font-size: 10px;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 300;
+      line-height: 12px;
+      letter-spacing: -0.01em;
+      padding-left: 24px;
+      color: #2E2E38;
+    }
+
+    .intro-title strong {
+      font-size: 10px;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 700;
+      line-height: 12px;
+      letter-spacing: -0.01em;
+      color: #2E2E38;
+    }
+
+    .button {
+      background: none;
+      padding: 14px 11px;
+      border: 1px solid #2E2E38;
+      border-radius: 1px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.01em;
+      color: #2E2E38;
+    }
+
+    .nudge{
+      padding: 16px 32px;
+      background-color: #E6F6F5;
+    }
+
+    .nudge p {
+      padding: 0 24px;
+    }
+
+    p {
+      color: #2E2E38;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+
+    a {
+      color: #188CE5;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 17px;
+      letter-spacing: -0.01em;
+    }
+
+    .section {
+      padding: 16px 32px;
+      border: 1px solid #C4C4CD;
+    }
+
+    .upcoming-container {
+      border-bottom: 1px solid #F6F6FA;
+      padding-bottom: 16px;
+      margin-bottom: 8px;
+    }
+
+    h3 {
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 15px;
+      letter-spacing: -0.01em;
+      color: #2E2E38;
+      text-transform: uppercase;
+      margin: 0;
+    }
+    .upcoming-cta-container {
+      width: 100%;
+      text-align: right;
+    }
+
+    .event {
+      background-color: #E9E3F0;
+    }
+
+    .mentoring {
+      background-color: #E7F7EC;
+    }
+
+    .training-link {
+      margin-right: 24px;
+    }
+
+    .resource-link a{
+      color: #2E2E38;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 300;
+      font-size: 12px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+    }
+    .footer {
+      padding: 24px 32px;
+      text-align: center;
+    }
+    .title {
+      background-color: #292931;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+      background-image: url("/images/title-background.png");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+    .title .heading {
+      color: #FFFFFF;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 700;
+      font-size: 12px;
+      line-height: 14px;
+      letter-spacing: -0.01em;
+      text-transform: uppercase;
+    }
+    .title .description {
+      color: #FFFFFF;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: -0.01em;
+    }
+
+    .title-button {
+      border: 1px solid #747480;
+      background-color: #2E2E38;
+      padding: 8px;
+      color: #FFFFFF;
+      font-family: 'EYInterstate', Arial, sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 17px;
+      margin-left: 24px;
+    }
+    .training {
+      background-color: #F5F5F9;
+    }
+    .resources {
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background-color: #F5F5F9;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section title">
+      <p class="heading">Oceania Diversity, Equity &<br/>Inclusiveness Newsletter</p>
+      <table width="70%">
+        <tr>
+          <td>
+            <p class="description">EY's Oceania DE&I team provides resources, tools, and policies to create high-performing teams that maximize diverse perspectives and succeed globally.</p>
+          </td>
+          <td width="40%">
+            <button class="title-button">DE&I Sharepoint</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="section intro">
+      <h1>A Note from Alex</h1>
+      <p>The world is changing fast and we want to make sure EY is one of the leaders of that change. At EY we believe only the highest performing teams, teams who maximise the power of different opinions, perspectives and cultural references will succeed in the global marketplace. Leveraging, Diversity, Equity & Inclusiveness (DE&I) is one of the ways we will gain that advantage.</p>
+      <table width="100%">
+        <tr>
+          <td>
+            <img src="/images/alex-wilson.png" alt="Alex Wilson">
+          </td>
+          <td>
+            <div class="intro-title">
+              <strong>Alex Wilson</strong><br/>Associate Director<br/>Leading the Oceania DE&I team
+            </div>
+          </td>
+          <td align="right">
+            <button class="button">Join me in celebrating Maria</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="section nudge">
+      <table width="100%">
+        <tr>
+          <td>
+            <h2>Nudge</h2>
+          </td>
+          <td>
+            <p>
+              <a href="">Remember to register</a> if you'll join us for a Cultural Potluck tomorrow at 12PM in the cafeteria! Bring a dish that represents your heritage and let's celebrate diversity together.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="section upcoming">
+      <h2>Coming up in early November</h2>
+      <table width="100%">
+        <tr>
+          <td width="50%">
+            <div class="upcoming-container">
+              <h3>Ability</h3>
+              <a href="">Title of something that's happening</a>
+              <p>Mon, Nov 6, All day</p>
+            </div>
+          </td>
+          <td width="50%">
+            <div class="upcoming-container">
+              <h3>Cultural Diversity</h3>
+              <a href="">Title of something that's happening</a>
+              <p>Mon, Nov 6, All day</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%">
+            <div class="upcoming-container">
+              <h3>Indigenous</h3>
+              <a href="">Title of something that's happening</a>
+              <p>Mon, Nov 6, All day</p>
+            </div>
+          </td>
+          <td width="50%">
+            <div class="upcoming-container">
+              <h3>Gender</h3>
+              <a href="">Title of something that's happening</a>
+              <p>Mon, Nov 6, All day</p>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td width="50%">
+            <div>
+              <h3>Unity in Oceania</h3>
+              <a href="">Title of something that's happening</a>
+              <p>Mon, Nov 6, All day</p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <div class="upcoming-cta-container">
+        <button class="button">Explore the DE&I Calendar</button>
+      </div>
+    </div>
+    <div class="section event">
+      <table width="100%">
+        <tr>
+          <td width="34%">
+            <h2>Last months charity dinner was success</h2>
+            <p>We are thrilled to announce the tremendous success of our recent charity dinner in support of LGBTQIA+ youth. Through the outpouring of generosity and support from our community, we raised a staggering amount of $40,000</p>
+            <a href="">Read more about this event</a>
+          </td>
+          <td width="66%">
+            <img src="./images/event.png" alt="Charity Dinner">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="section mentoring">
+      <h2>Unity Mentoring Program</h2>
+      <p>We are looking for participants for the next round of the Unity Mentoring program, with applications closing Friday 13 October, To sign up, please do so here. For all participants, we'll hold a briefing session on Monday 30 October. <a href="">More details in this Daily News Article</a></p>
+    </div>
+    <div class="section">
+      <table width="100%">
+        <tr>
+          <td width="25%">
+            <h2>We highly recommend you check out...</h2>
+          </td>
+          <td width="55%">
+            <p>
+              <a href="">"Breaking Boundaries: Embracing Gender Diversity"</a> explores the complex and evolving landscape of gender identity, aiming to foster understanding, acceptance, and equality for individuals across the gender spectrum.
+            </p>
+          </td>
+          <td width="20%">
+            <img src="./images/recommended-read.png" alt="Recommended read">
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="section training">
+      <table width="100%">
+        <tr>
+          <td width="25%">
+            <h2>Ongoing training</h2>
+          </td>
+          <td width="75%">
+            <a href="" class="training-link">Badges</a>
+            <a href="" class="training-link">Indigenous</a>
+            <a href="" class="training-link">Ability</a>
+            <a href="" class="training-link">Gender</a>
+            <a href="" class="training-link">LGBTQIA+</a>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="section resources">
+      <h2>Resources and Offerings</h2>
+      <table width="100%">
+        <tr>
+          <td>
+            <h3>Available Resources</h3>
+            <p class="resource-link"><a href="">Workplace Support</a></p>
+            <p class="resource-link"><a href="">Allies Toolkit</a></p>
+            <p class="resource-link"><a href="">Cultural Ambassador Program</a></p>
+            <p class="resource-link"><a href="">Social Equity Hub</a></p>
+            <p class="resource-link"><a href="">Inclusion Cards</a></p>
+            <p class="resource-link"><a href="">Complete the Cultural Census</a></p>
+          </td>
+          <td>
+            <h3>Additional Information</h3>
+            <p class="resource-link"><a href="">Workplace Support</a></p>
+            <p class="resource-link"><a href="">Allies Toolkit</a></p>
+            <p class="resource-link"><a href="">Cultural Ambassador Program</a></p>
+            <p class="resource-link"><a href="">Social Equity Hub</a></p>
+            <p class="resource-link"><a href="">&nbsp;</a></p>
+            <p class="resource-link"><a href="">&nbsp;</a></p>
+          </td>
+          <td>
+            <h3>DE&I Networks</h3>
+            <p class="resource-link"><a href="">Workplace Support</a></p>
+            <p class="resource-link"><a href="">Allies Toolkit</a></p>
+            <p class="resource-link"><a href="">Cultural Ambassador Program</a></p>
+            <p class="resource-link"><a href="">Social Equity Hub</a></p>
+            <p class="resource-link"><a href="">&nbsp;</a></p>
+            <p class="resource-link"><a href="">&nbsp;</a></p>
+          </td>
+        </tr>
+      </table>
+      <div class="upcoming-cta-container">
+        <button class="button" href="">Full list of DE&I Resources and Offerings</button>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="footer">
+      <img src="./images/ey-logo.png" alt="">
+    </div>
+  </div>
+</body>
+</html>
