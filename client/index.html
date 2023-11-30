@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light dark">
+  <meta name="supported-color-scheme" content="light dark only">
   <title>Email Template</title>
-  <style>
+  <style type="text/css">
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
     html, body {
       margin: 0;
       padding: 0;
@@ -27,7 +31,6 @@
     }
 
     .intro {
-      height: 250px;
       padding: 24px 32px;
     }
     .intro h1 {
@@ -227,143 +230,160 @@
 
       padding: 8px 0;
     }
+
+    .dark-img {
+      display: none;
+    }
+
+    @media (prefers-colors-scheme: dark) {
+      h1, h2, h3, h4, h5, h6, p, a, button {
+        color: #FFFFFF;
+      }
+      a {
+        color: #47A0FF;
+      }
+      /* Shows Dark Mode-Only Content, Like Images */
+      [data-ogsc] .dark-img { display:block !important; width: auto !important; overflow: visible !important; float: none !important; max-height:inherit !important; max-width:inherit !important; line-height: auto !important; margin-top:0px !important; visibility:inherit !important; }
+      
+      /* Hides Light Mode-Only Content, Like Images */
+      [data-ogsc] .light-img { display:none; display:none !important; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <div class="footer">
-      <img src="./images/ey-logo.png" alt="">
+      <img src="https://eyaustralia.sharepoint.com/:i:/r/sites/OceaniaDEI/Shared%20Documents/Newsletter/ey-logo.png" alt="">
+      <!--[if !mso]><! --><div class="dark-img">
+        <img src="./images/ey-logo-white.png" alt="Introduction" />
+      </div><!--<![endif]-->
     </div>
   </div>
   <div class="container">
     <div class="section title">
-      <p class="heading">Oceania Diversity, Equity &<br/>Inclusiveness Newsletter</p>
+      <p class="heading">Oceania Diversity, Equity &amp;<br>Inclusiveness Newsletter</p>
       <table width="70%">
-        <tr>
+        <tbody><tr>
           <td>
-            <p class="description">EY's Oceania DE&I team provides resources, tools, and policies to create high-performing teams that maximize diverse perspectives and succeed globally.</p>
+            <p class="description">EY's Oceania DE&amp;I team provides resources, tools, and policies to create inclusive and equitable teams that maximize diverse perspectives and succeed globally.</p>
           </td>
           <td width="40%">
-            <button class="title-button">DE&I Sharepoint</button>
+            <a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI"><button class="title-button">DE&amp;I Sharepoint</button></a>
           </td>
         </tr>
-      </table>
+      </tbody></table>
     </div>
     <div class="section intro">
       <div class="intro-header">
-        <img src="./images/note_icon.svg" alt="Introduction" style="padding-top: 6px">
+        <div>
+          <img class="light-img" src="https://eyaustralia.sharepoint.com/:u:/r/sites/OceaniaDEI/Shared%20Documents/Newsletter/note_icon.svg" alt="Introduction" style="padding-top: 6px">
+          <!--[if !mso]><! --><div class="dark-img">
+            <img src="./images/note_icon-white.svg" alt="Introduction" style="padding-top: 6px" />
+          </div><!--<![endif]-->
+        </div>
         <div>
           <h1>A Note from Alex</h1>
-          <p>The world is changing fast and we want to make sure EY is one of the leaders of that change. At EY we believe only the highest performing teams, teams who maximise the power of different opinions, perspectives and cultural references will succeed in the global marketplace. Leveraging, Diversity, Equity & Inclusiveness (DE&I) is one of the ways we will gain that advantage.</p>
+          <p>As we wrap up the year, let's take a moment to acknowledge the progress we've made in promoting diversity, equity, and inclusion (DE&amp;I) at EY Oceania. The world is changing fast and we want to make sure EY is one of the leaders of that change. Last month we ran a successful Neurodiversity November campaign, and now we are in the midst of our annual 16 Days of Activism Against Gender-based Violence campaing. Let's keep up the momentum in creating a safe and inclusive workplace. </p>
         </div>
       </div>
       
       <table width="100%">
-        <tr>
+        <tbody><tr>
           <td>
-            <img src="/images/alex-wilson.png" alt="Alex Wilson">
+            <img src="https://eyaustralia.sharepoint.com/:i:/r/sites/OceaniaDEI/Shared%20Documents/Newsletter/alex-wilson.png" alt="Alex Wilson">
           </td>
           <td>
             <div class="intro-title">
-              <strong>Alex Wilson</strong><br/>Associate Director<br/>Leading the Oceania DE&I team
-            </div>
+              <strong>Alex Wilson</strong><br>EY Oceania<br>Diversity, Equity and Inclusiveness Leader</div>
           </td>
           <td align="right">
-            <button class="button">Join me in celebrating Maria</button>
+            <a href="https://www.linkedin.com/posts/women-in-information-and-communications-wic_womeninict-leadership-awards-activity-7133212914458533888-emyi?utm_source=share&amp;utm_medium=member_desktop"><button class="button">Join me in celebrating Permenthri Pillay,<br>the WICked Woman of the Year Award&NoBreak; winner!</button></a>
           </td>
         </tr>
-      </table>
+      </tbody></table>
     </div>
     <div class="section nudge">
       <table width="100%">
-        <tr>
+        <tbody><tr>
           <td>
             <div class="header">
-              <img src="./images/nudge_icon.svg" alt="Nudge">
-              <h2>Nudge</h2>
+              <img src="https://eyaustralia.sharepoint.com/:u:/r/sites/OceaniaDEI/Shared%20Documents/Newsletter/nudge_icon.svg" alt="Nudge" class="light-img">
+              <!--[if !mso]><! --><div class="dark-img">
+                <img src="./images/nudge_icon-white.svg" alt="Nudge" />
+              </div><!--<![endif]-->
+              <h2>Reminder</h2>
             </div>
           </td>
           <td>
             <p>
-              <a href="">Remember to register</a> if you'll join us for a Cultural Potluck tomorrow at 12PM in the cafeteria! Bring a dish that represents your heritage and let's celebrate diversity together.
+              <a href="https://intranet.ey.com/sites/oceania-content/newsviews/1031477/awei-survey">Complete Australian Workplace Equality Index (AWEI) Employee Survey.</a> This is a national survey run by Pride in Diversity, and covers a number of areas related to diversity, inclusion, exclusion, culture, with a particular focus on inclusion of LGBTQ+ employees. Your input is important regardless of whether you identify as part of LGBTQ+ community or an ally!  To participate, please click on <a href="https://survey.websurveycreator.com/s/2024_AWEI?org-name=EY">the survey link</a>. Further information can be found in <a href="https://intranet.ey.com/sites/oceania-content/newsviews/1031477/awei-survey">this Daily News Article</a>.
             </p>
           </td>
         </tr>
-      </table>
+      </tbody></table>
     </div>
     <div class="section upcoming">
       <div class="header">
-        <img src="./images/calendar-icon.svg" alt="Upcoming events">
-        <h2>Coming up in early November</h2>
+        <img src="https://eyaustralia.sharepoint.com/:u:/r/sites/OceaniaDEI/Shared%20Documents/Newsletter/calendar-icon.svg" alt="Upcoming events" class="light-img">
+        <!--[if !mso]><! --><div class="dark-img">
+          <img src="./images/calendar-icon-white.svg" alt="Upcmoing events" />
+        </div><!--<![endif]-->
+        <h2>Coming up in December</h2>
       </div>
       <table width="100%">
-        <tr>
+        <tbody><tr>
           <td width="50%">
             <div class="upcoming-container">
               <h3>Ability</h3>
-              <a href="">Title of something that's happening</a>
-              <p>Mon, Nov 6, All day</p>
-            </div>
-          </td>
-          <td width="50%">
-            <div class="upcoming-container">
-              <h3>Cultural Diversity</h3>
-              <a href="">Title of something that's happening</a>
-              <p>Mon, Nov 6, All day</p>
-            </div>
-          </td>
-        </tr>
-        <tr>
-          <td width="50%">
-            <div class="upcoming-container">
-              <h3>Indigenous</h3>
-              <a href="">Title of something that's happening</a>
-              <p>Mon, Nov 6, All day</p>
+              <a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/_layouts/15/Event.aspx?ListGuid=1f66953d-2a95-425a-b880-df1ccffc1871&amp;ItemId=350">International Day of Persons with Disabilities (Annual Trivia)</a>
+              <p>
+Wedn, Dec 13, 12:00 PM – 1:00 PM AEDT</p>
             </div>
           </td>
           <td width="50%">
             <div class="upcoming-container">
               <h3>Gender</h3>
-              <a href="">Title of something that's happening</a>
-              <p>Mon, Nov 6, All day</p>
+              <a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/_layouts/15/Event.aspx?ListGuid=1f66953d-2a95-425a-b880-df1ccffc1871&amp;ItemId=351">16 Days of Activism against Gender-based Violence: Recognise, Respond and Refer</a>
+              <p>Thur, Dec 7, 1:00 PM – 2:00 PM AEDT</p>
             </div>
           </td>
         </tr>
+        
         <tr>
           <td width="50%">
             <div>
-              <h3>Unity in Oceania</h3>
+              <h3>???</h3>
               <a href="">Title of something that's happening</a>
               <p>Mon, Nov 6, All day</p>
             </div>
           </td>
         </tr>
-      </table>
+      </tbody></table>
       <div class="upcoming-cta-container">
-        <button class="button">Explore the DE&I Calendar</button>
+        <a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/_layouts/15/Events.aspx?Page=%2Fsites%2FOceaniaDEI&amp;InstanceId=2c1269ed-5acb-4ca4-a8d6-ff72dc7e52f1&amp;Category=&amp;StartDate=2023-12-01&amp;EndDate=2024-02-29&amp;AudienceTarget=false"><button class="button">Explore the DE&amp;I Calendar</button></a>
       </div>
     </div>
     <div class="section event">
       <table width="100%">
-        <tr>
+        <tbody><tr>
           <td width="34%">
-            <h2>Last months charity dinner was success</h2>
-            <p>We are thrilled to announce the tremendous success of our recent charity dinner in support of LGBTQIA+ youth. Through the outpouring of generosity and support from our community, we raised a staggering amount of $40,000</p>
-            <a href="">Read more about this event</a>
+            <h2>Neurodiversity November 2023</h2>
+            <p>Last week we concluded the Neurodiversity November 2023. We are proud to have launched EY Oceania’s first <a href="https://eyaustralia.sharepoint.com/:b:/r/sites/OceaniaDEI/Neurodiversity%20Resources/FY24-26%20EY%20Oceania%20Neurodiversity%20Strategy.pdf?csf=1&amp;web=1&amp;e=PeLHg2">Neurodiversity Strategy.</a> Our month-long campaign included six events and had provided opportunities for XXXX EY staff to learn about neurodiversity, the strengths and skills neurodivergent people and how to be a better ally to those who are neurodivergent.</p>
+            <a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/Neurodiversity-November.aspx">Find recordings and read more about the ND November events</a>
           </td>
           <td width="66%">
-            <img src="./images/event.png" alt="Charity Dinner">
+            <img src="https://eyaustralia.sharepoint.com/:i:/r/sites/OceaniaDEI/Shared%20Documents/Newsletter/NDNovember2023sm.jpg" alt="Neurodiversity November 2023">
           </td>
         </tr>
-      </table>
+      </tbody></table>
     </div>
     <div class="section mentoring">
-      <h2>Unity Mentoring Program</h2>
-      <p>We are looking for participants for the next round of the Unity Mentoring program, with applications closing Friday 13 October, To sign up, please do so here. For all participants, we'll hold a briefing session on Monday 30 October. <a href="">More details in this Daily News Article</a></p>
+      <h2>New Workplace Adjustments process</h2>
+      <p>In November 2023 we launched our new person-centred approach to Workplace Adjustments (WPA). Whether you require adjustments relating to accessibility, health or other aspects of your role, this new process will provide you with a more straightforward approach to your request, along with access to a Case Manager to support you through the process. Refer to the new <a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/Workplace-Adjustments.aspx">Workplace Adjustments SharePoint</a> to find comprehensive information about the process, guidelines for making requests, and who to contact for assistance.</p>
     </div>
     <div class="section">
       <table width="100%">
-        <tr>
+        <tbody><tr>
           <td width="25%">
             <h2>We highly recommend you check out...</h2>
           </td>
@@ -376,76 +396,82 @@
             <img src="./images/recommended-read.png" alt="Recommended read">
           </td>
         </tr>
-      </table>
+      </tbody></table>
     </div>
     <div class="section training">
       <table width="100%">
-        <tr>
+        <tbody><tr>
           <td width="30%">
            <div class="header">
-              <img src="./images/training-icon.svg" alt="Ongoing training">
+              <img src="https://eyaustralia.sharepoint.com/:u:/r/sites/OceaniaDEI/Shared%20Documents/Newsletter/training-icon.svg" alt="Ongoing training" class="light-img">
+              <!--[if !mso]><! --><div class="dark-img">
+                <img src="./images/training-icon-white.svg" alt="Ongoing training" />
+              </div><!--<![endif]-->
               <h2>Ongoing training</h2>
            </div>
           </td>
           <td width="70%" style="text-align: right">
-            <a href="" class="training-link">Badges</a>
-            <a href="" class="training-link">Indigenous</a>
-            <a href="" class="training-link">Ability</a>
-            <a href="" class="training-link">Gender</a>
-            <a href="" class="training-link">LGBTQIA+</a>
+            
+            <a href="https://sfwzprd1-lscwfyff.workzonehr.cfapps.eu20.hana.ondemand.com/site#workzone-home&amp;/home/hqoi7aX2qR4Mjg0kVT7ZKL" class="training-link">EY Badges</a>
+            <a href="https://sites.ey.com/sites/GlobalDI/SitePages/inclusive-leadership-for-all-elearning.aspx" class="training-link">IL4ALL</a>
+            <a href="https://sites.ey.com/sites/CulturalAmbassadorProgram" class="training-link">First Nations</a>
+            <a href="https://eyaustralia.sharepoint.com/sites/EYNewZealandMaoriCulturalCapability" class="training-link">Māori</a>
           </td>
         </tr>
-      </table>
+      </tbody></table>
     </div>
     <div class="section resources">
       <div class="header">
-        <img src="./images/resources-icon.svg" alt="Resources and offerings">
+        <img src="https://eyaustralia.sharepoint.com/:u:/r/sites/OceaniaDEI/Shared%20Documents/Newsletter/resources-icon.svg" alt="Resources and offerings">
+        <!--[if !mso]><! --><div class="dark-img">
+          <img src="./images/resources-icon-white.svg" alt="Resources and offerings" />
+        </div><!--<![endif]-->
         <h2>Resources and Offerings</h2>
       </div>
       <table width="100%">
-        <tr>
-          <td>
-            <h3>Available Resources</h3>
-            <p class="resource-link"><a href="">Workplace Support</a></p>
-            <p class="resource-link"><a href="">Allies Toolkit</a></p>
-            <p class="resource-link"><a href="">Cultural Ambassador Program</a></p>
-            <p class="resource-link"><a href="">Social Equity Hub</a></p>
-            <p class="resource-link"><a href="">Inclusion Cards</a></p>
-            <p class="resource-link"><a href="">Complete the Cultural Census</a></p>
+        <tbody><tr>
+          <td width="33%">
+            <h3>DE&amp;I Networks and Communities</h3>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/Ability.aspx">Ability</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/CD-@-EY.aspx">CD@EY</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/Gender-Inclusion.aspx">Gender</a></p>
+            <p class="resource-link"><a href="https://sites.ey.com/sites/UnityAsiaPacific/Oceania/SitePages/Home.aspx">Unity</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/Maori.aspx">Tuia! (Māori staff network)</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/:u:/r/sites/OceaniaDEI/SitePages/Yarning-Circle.aspx?csf=1&amp;web=1&amp;e=hGNJMo">Yarning Circle</a></p>
           </td>
-          <td>
-            <h3>Additional Information</h3>
-            <p class="resource-link"><a href="">Workplace Support</a></p>
-            <p class="resource-link"><a href="">Allies Toolkit</a></p>
-            <p class="resource-link"><a href="">Cultural Ambassador Program</a></p>
-            <p class="resource-link"><a href="">Social Equity Hub</a></p>
-            <p class="resource-link"><a href="">&nbsp;</a></p>
-            <p class="resource-link"><a href="">&nbsp;</a></p>
+          <td width="33%">
+            <h3>Resources</h3>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaCultureReview">Culture+</a></p>
+            <p class="resource-link"><a href="https://sites.ey.com/sites/IYTB/SocialEquityHub/SitePages/Home.aspx">Social Equity Hub</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/Inclusion-Cards.aspx">Inclusion cards</a></p>
+            <p class="resource-link"><a href="https://intranet.ey.com/sites/oceania-content/pages/campaigns/oceania-cultural-census/SitePageModern/522603/oceania-cultural-census">Cultural Census</a></p>
+            <p class="resource-link"><a href="https://intranet.ey.com/newsviews/967442/self-id">Self-ID</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FOceaniaDEI%2FShared%20Documents%2FDE%26I%20Allies%20Toolkit%2Epdf&amp;parent=%2Fsites%2FOceaniaDEI%2FShared%20Documents">Allyship toolkit</a></p>
           </td>
-          <td>
-            <h3>DE&I Networks</h3>
-            <p class="resource-link"><a href="">Workplace Support</a></p>
-            <p class="resource-link"><a href="">Allies Toolkit</a></p>
-            <p class="resource-link"><a href="">Cultural Ambassador Program</a></p>
-            <p class="resource-link"><a href="">Social Equity Hub</a></p>
-            <p class="resource-link"><a href="">&nbsp;</a></p>
-            <p class="resource-link"><a href="">&nbsp;</a></p>
+          <td width="33%">
+            <h3>DE&amp;I strategies</h3>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FOceaniaDEI%2FShared%20Documents%2FDEI%20Anchors%20%26%20Strategy%2Epdf&amp;parent=%2Fsites%2FOceaniaDEI%2FShared%20Documents">Oceania DE&amp;I Strategy</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/Neurodiversity%20Resources/Forms/AllItems.aspx?sortField=Modified&amp;isAscending=false&amp;id=%2Fsites%2FOceaniaDEI%2FNeurodiversity%20Resources%2FFY24%2D26%20EY%20Oceania%20Neurodiversity%20Strategy%2Epdf&amp;viewid=84b04f26%2D86ba%2D44f1%2Da1ae%2Def2fd913942f&amp;parent=%2Fsites%2FOceaniaDEI%2FNeurodiversity%20Resources">Neurodiversity Strategy</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FOceaniaDEI%2FShared%20Documents%2FAccessibility%20%26%20Inclusion%20Plan%202021%2Epdf&amp;parent=%2Fsites%2FOceaniaDEI%2FShared%20Documents">Accessibility and Inclusion Plan</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/Gender.aspx">Gender Strategy</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/Cultural-Diversity.aspx">Cultural Diversity Strategy</a></p>
+            <p class="resource-link"><a href="https://eyaustralia.sharepoint.com/:p:/s/OceaniaDITeam-DEITalentAttractionandAcquisition/EZFGGcjR5UBEp0Kg_Y7w8ZQBgaF0CF5zx3nYWSfZnq3IPQ?e=dpCSwo">Talent Acquisition Strategy</a></p>
           </td>
         </tr>
-      </table>
+      </tbody></table>
       <div class="upcoming-cta-container">
-        <button class="button" href="">Full list of DE&I Resources and Offerings</button>
+        <a href="https://eyaustralia.sharepoint.com/sites/OceaniaDEI/SitePages/Resources%20and%20Offerings.aspx"><button class="button" href="">Full list of DE&amp;I Resources</button></a>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="footer">
-      <img src="./images/ey-logo.png" alt="">
+      <img src="https://eyaustralia.sharepoint.com/:i:/r/sites/OceaniaDEI/Shared%20Documents/Newsletter/ey-logo.png" alt="">
       <div class="footnote">
-        <p>© 20X3 [local member firm entity]. All Rights Reserved</p>
-        <p>EY refers to the global organization, and may refer to one or more, of the member firms of Ernst & Young Global Limited, each of which is a separate legal entity. Ernst & Young Global Limited, a UK company limited by guarantee, does not provide services to clients. Information about how EY collects and uses personal data and a description of the rights individuals have under data protection legislation are available via ey.com/privacy. EY member firms do not practice law where prohibited by local laws. For more information about our organization, please visit ey.com.</p>
+        <p>© 2023 Ernst &amp; Young. All Rights Reserved</p>
+        <p>EY refers to the global organization, and may refer to one or more, of the member firms of Ernst &amp; Young Global Limited, each of which is a separate legal entity. Ernst &amp; Young Global Limited, a UK company limited by guarantee, does not provide services to clients. Information about how EY collects and uses personal data and a description of the rights individuals have under data protection legislation are available via ey.com/privacy. EY member firms do not practice law where prohibited by local laws. For more information about our organization, please visit ey.com.</p>
       </div>
     </div>
   </div>
-</body>
-</html>
+
+</body></html>
